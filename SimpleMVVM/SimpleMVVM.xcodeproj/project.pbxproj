@@ -14,6 +14,8 @@
 		637337922B3EE39600840726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637337902B3EE39600840726 /* LaunchScreen.storyboard */; };
 		6373379F2B3EE78400840726 /* MainViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373379E2B3EE78400840726 /* MainViewController + TableView.swift */; };
 		637337A12B3EE83900840726 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637337A02B3EE83900840726 /* MainViewModel.swift */; };
+		638DA7742B43FC0900E56C5C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DA7732B43FC0900E56C5C /* DetailsViewController.swift */; };
+		638DA7762B43FCA300E56C5C /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DA7752B43FCA300E56C5C /* DetailsViewModel.swift */; };
 		63B990BC2B40517F0028A818 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B990BB2B40517F0028A818 /* EndPoint.swift */; };
 		63B990BE2B4052840028A818 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B990BD2B4052840028A818 /* Users.swift */; };
 		63B990C02B4053B00028A818 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B990BF2B4053B00028A818 /* URLSession.swift */; };
@@ -35,6 +37,8 @@
 		637337932B3EE39600840726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6373379E2B3EE78400840726 /* MainViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + TableView.swift"; sourceTree = "<group>"; };
 		637337A02B3EE83900840726 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		638DA7732B43FC0900E56C5C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		638DA7752B43FCA300E56C5C /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		63B990BB2B40517F0028A818 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		63B990BD2B4052840028A818 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		63B990BF2B4053B00028A818 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
@@ -79,7 +83,6 @@
 				6373379C2B3EE4C700840726 /* Models */,
 				6373379A2B3EE4B200840726 /* Views */,
 				6373379B2B3EE4BC00840726 /* ViewModels */,
-				63B990BA2B4051590028A818 /* Networking */,
 				63B990C72B4064830028A818 /* Helpers */,
 				637337992B3EE4A900840726 /* Application */,
 				6373379D2B3EE4E900840726 /* Supporting File */,
@@ -100,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				637337892B3EE39400840726 /* MainViewController.swift */,
+				638DA7732B43FC0900E56C5C /* DetailsViewController.swift */,
 				6373379E2B3EE78400840726 /* MainViewController + TableView.swift */,
 				63B990CA2B406F7C0028A818 /* MainCell.swift */,
 			);
@@ -111,6 +115,8 @@
 			children = (
 				637337A02B3EE83900840726 /* MainViewModel.swift */,
 				63B990CC2B4070C60028A818 /* MainCellViewModel.swift */,
+				638DA7752B43FCA300E56C5C /* DetailsViewModel.swift */,
+				63B990BA2B4051590028A818 /* Networking */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				63B990BC2B40517F0028A818 /* EndPoint.swift in Sources */,
 				637337A12B3EE83900840726 /* MainViewModel.swift in Sources */,
 				63B990C02B4053B00028A818 /* URLSession.swift in Sources */,
+				638DA7762B43FCA300E56C5C /* DetailsViewModel.swift in Sources */,
 				63B990CD2B4070C60028A818 /* MainCellViewModel.swift in Sources */,
 				6373378A2B3EE39400840726 /* MainViewController.swift in Sources */,
 				63B990C92B4064970028A818 /* Observable.swift in Sources */,
@@ -237,6 +244,7 @@
 				63B990C22B4054B90028A818 /* NetworkError.swift in Sources */,
 				637337882B3EE39400840726 /* SceneDelegate.swift in Sources */,
 				63B990BE2B4052840028A818 /* Users.swift in Sources */,
+				638DA7742B43FC0900E56C5C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

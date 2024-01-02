@@ -31,7 +31,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainCell.identifier, for: indexPath) as? MainCell else { return UITableViewCell() }
         let cellViewModel = cellDataSource[indexPath.row]
         cell.setupCell(viewModel: cellViewModel)
-        //cell.textLabel?.text = cellDataSource[indexPath.row].username
         return cell
     }
     
@@ -43,6 +42,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         70
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let dataSource = viewModel.dataSource else { return }
+        presentDetailVC(user: dataSource[indexPath.row])
     }
     
     

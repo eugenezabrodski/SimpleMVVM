@@ -55,6 +55,12 @@ class MainViewController: UIViewController {
             reloadTableView()
         }
     }
+    
+    func presentDetailVC(user: Users) {
+        let detailViewModel = DetailsViewModel(user: user)
+        let detailVC = DetailsViewController(detailsViewModel: detailViewModel)
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 
 }
 
